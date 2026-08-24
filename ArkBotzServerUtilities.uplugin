@@ -1,0 +1,20 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "ArkBotzServerUtilities",
+	"Description": "Add your summary here",
+	"Category": "UGC",
+	"CreatedBy": "",
+	"CreatedByURL": "",
+	"DocsURL": "",
+	"MarketplaceURL": "https://legacy.curseforge.com/ark-survival-ascended/mods/ark-botz-server-utilities",
+	"SupportURL": "",
+	"CanContainContent": true,
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false,
+	"Installed": false,
+	"ExplicitlyLoaded": true,
+	"AutoCookingType": "All",
+	"CfUgcId": 1666985
+}
