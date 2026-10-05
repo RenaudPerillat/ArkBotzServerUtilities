@@ -13,22 +13,75 @@ The baked mod is available on Curse Forge, [here](https://www.curseforge.com/ark
 
 In this project, you will find:
 
-- ArkBotzUtilities: Blueprint utility functions, such as logger, ini parameter reader, custom command management.
-- ArkBotzPlayerTracker: Record players position on the map and send it using http post request to a server.
+- Utilities: Blueprint utility functions, such as logger, ini parameter reader, custom command management.
+- MaxWayPointUpdate: Allow to modify the maximum number of waypoint that can be used.
+- TabletTool: Item providing quest system to players, administrative tools to game masters, lore item.
 
 ## Documentations
 
-### ArkBotzPlayerTracker
+### Logger
 
-Inherits from SaveGameActorTickable.
-Added as Server Extra World Singleton Actor Class.
+It is possible to attached a logger component for diagnostics.
+The logger can be configured using ini file or commands.
 
-Configuration
+#### Configuration
+
 ```ini
-[ArkBotzPlayerTracker]
-EnableLogs=True
-LogsLevel="Info"
-PositionRecordIntervalSeconds=1.0
-SendToServerIntervalSeconds=10.0
-ServerURI="https://example.com"
+[<DedicatedSection>]
+LogEnabled=True
+LogLevel="Info"
 ```
+
+#### Command
+
+```
+AdminCheat ScriptCommand ArkBotz <DedicatedSection> SetLogEnabled True
+AdminCheat ScriptCommand ArkBotz <DedicatedSection> SetLogLevel Info
+```
+
+### MaxWayPointUpdate
+
+Buff attached to players.
+Can be configured using ini file or commands.
+Has a logger component attached.
+
+#### Configuration
+
+```ini
+[MaxWaypointUpdate]
+LogEnabled=True
+LogLevel="Info"
+MaxWaypoints=20
+```
+
+#### Command
+
+```
+AdminCheat ScriptCommand ArkBotz MaxWaypointUpdate SetLogEnabled True
+AdminCheat ScriptCommand ArkBotz MaxWaypointUpdate SetLogLevel Info
+AdminCheat ScriptCommand ArkBotz MaxWaypointUpdate SetMaxWaypoints 20
+```
+
+### TabletTool
+
+Primal Item, singleton to manage item for each player (give at spawn, remove at death).
+**CAREFUL: Item can be dropped from the inventory.**
+
+Can be configured using ini file or commands.
+Has a logger component attached.
+
+#### Configuration
+
+```ini
+[TabletTool]
+LogEnabled=True
+LogLevel="Info"
+```
+
+#### Command
+
+```
+AdminCheat ScriptCommand ArkBotz TabletTool SetLogEnabled True
+AdminCheat ScriptCommand ArkBotz TabletTool SetLogLevel Info
+```
+
