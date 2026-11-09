@@ -44,7 +44,6 @@ Has a logger component attached.
 #### Command
 
 ```
-AdminCheat ScriptCommand ArkBotz MaxWaypointUpdate ShowConfiguration
 AdminCheat ScriptCommand ArkBotz MaxWaypointUpdate SetLogEnabled True
 AdminCheat ScriptCommand ArkBotz MaxWaypointUpdate SetLogLevel Info
 AdminCheat ScriptCommand ArkBotz MaxWaypointUpdate SetMaxWaypoints 20
@@ -63,5 +62,51 @@ Has a logger component attached.
 ```
 AdminCheat ScriptCommand ArkBotz TabletTool SetLogEnabled True
 AdminCheat ScriptCommand ArkBotz TabletTool SetLogLevel Info
+
+AdminCheat ScriptCommand ArkBotz TabletTool ClearSavedPlayerTablet
+AdminCheat ScriptCommand ArkBotz TabletTool ChangeTablet <ID> <Tablet>
+AdminCheat ScriptCommand ArkBotz TabletTool RemoveTablet <ID>
 ```
 
+### All Commands
+
+```
+# Saved Logs
+AdminCheat ScriptCommand ArkBotz SavedLogs SetLogEnabled True
+AdminCheat ScriptCommand ArkBotz SavedLogs SetLogLevel Info
+AdminCheat ScriptCommand ArkBotz SavedLogs ClearSavedLogs
+
+# Max Waypoint Update
+AdminCheat ScriptCommand ArkBotz MaxWaypointUpdate SetLogEnabled True
+AdminCheat ScriptCommand ArkBotz MaxWaypointUpdate SetLogLevel Info
+AdminCheat ScriptCommand ArkBotz MaxWaypointUpdate SetMaxWaypoints 20
+
+# Quest Spawner
+AdminCheat ScriptCommand ArkBotz QuestSpawner SetLogEnabled True
+AdminCheat ScriptCommand ArkBotz QuestSpawner SetLogLevel Info
+
+# Quest Tracker
+AdminCheat ScriptCommand ArkBotz QuestTracker SetLogEnabled True
+AdminCheat ScriptCommand ArkBotz QuestTracker SetLogLevel Info
+
+# Tablet Spawner
+AdminCheat ScriptCommand ArkBotz TabletSpawner SetLogEnabled True
+AdminCheat ScriptCommand ArkBotz TabletSpawner SetLogLevel Info
+AdminCheat ScriptCommand ArkBotz TabletSpawner ClearSavedPlayerTablet
+AdminCheat ScriptCommand ArkBotz TabletSpawner GiveAdminTablet <player-id>
+AdminCheat ScriptCommand ArkBotz TabletSpawner GiveLoreTablet <player-id>
+AdminCheat ScriptCommand ArkBotz TabletSpawner RemovePlayer <player-id>
+AdminCheat ScriptCommand ArkBotz TabletSpawner GiveMeAdminTablet
+
+# Player Data
+AdminCheat ScriptCommand ArkBotz PlayerTabletSaves SetLogEnabled True
+AdminCheat ScriptCommand ArkBotz PlayerTabletSaves SetLogLevel Info
+AdminCheat ScriptCommand ArkBotz PlayerTabletSaves ClearAllPlayersData
+AdminCheat ScriptCommand ArkBotz PlayerTabletSaves RemovePlayerData <player-id>
+AdminCheat ScriptCommand ArkBotz PlayerTabletSaves ClearPlayerNotes <player-id>
+```
+
+
+Saved Logs Logger
+Quest Spawner Logger
+Quest Tracker Logger
