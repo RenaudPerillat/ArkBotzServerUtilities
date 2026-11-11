@@ -94,9 +94,12 @@ AdminCheat ScriptCommand ArkBotz TabletSpawner SetLogEnabled True
 AdminCheat ScriptCommand ArkBotz TabletSpawner SetLogLevel Info
 AdminCheat ScriptCommand ArkBotz TabletSpawner ClearSavedPlayerTablet
 AdminCheat ScriptCommand ArkBotz TabletSpawner GiveAdminTablet <player-id>
-AdminCheat ScriptCommand ArkBotz TabletSpawner GiveLoreTablet <player-id>
+AdminCheat ScriptCommand ArkBotz TabletSpawner GiveLoreTablet <player-id> <lore-id>
+AdminCheat ScriptCommand ArkBotz TabletSpawner GivePlayerTablet <player-id>
 AdminCheat ScriptCommand ArkBotz TabletSpawner RemovePlayer <player-id>
 AdminCheat ScriptCommand ArkBotz TabletSpawner GiveMeAdminTablet
+AdminCheat ScriptCommand ArkBotz TabletSpawner GiveMeLoreTablet <lore-id>
+AdminCheat ScriptCommand ArkBotz TabletSpawner GiveMePlayerTablet
 
 # Player Data
 AdminCheat ScriptCommand ArkBotz PlayerTabletSaves SetLogEnabled True
